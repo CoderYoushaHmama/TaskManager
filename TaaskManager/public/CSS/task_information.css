@@ -1,0 +1,67 @@
+@font-face {
+    font-family: macondo;
+    src: url(../FONTS/Macondo-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: macondo;
+}
+
+header{
+    width: 90%;
+    height: 10vh;
+    margin: 0 5%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    text-decoration: none;
+    font-size: 20px;
+}
+
+header .edit{
+    color: green;
+}
+
+header .remove{
+    color: red;
+}
+
+.title{
+    text-align: center;
+}
+
+.task-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.task-section .task{
+    width: 80%;
+    height: 50vh;
+    margin-top: 15vh;
+    border: 1px solid black;
+    overflow-y: scroll;
+    font-size: 20px;
+}
+
+.task-section .task::-webkit-scrollbar{
+    display: none;
+}
+
+button{
+    background-color: rgba(240, 248, 255, 0);
+    border: none;
+    font-size: 20px;
+    font-family: inherit;
+    outline: none;
+}

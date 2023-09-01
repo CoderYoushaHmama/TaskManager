@@ -1,0 +1,69 @@
+@font-face {
+    font-family: macondo;
+    src: url(../FONTS/Macondo-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: macondo;
+}
+
+.title{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.error{
+    width: 100%;
+    background-color: white;
+    color: red;
+    position: absolute;
+    top: 15%;
+    text-indent: 2%;
+}
+
+form{
+    width: 100%;
+    height: 45vh;
+    margin-top: 25vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+form input{
+    width: 90%;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 20px;
+    text-indent: 1%;
+}
+
+form button{
+    width: 50%;
+    height: 40px;
+    font-family: inherit;
+    font-size: 20px;
+    background-color: orange;
+    border: none;
+    border-radius: 8px;
+    color: white;    
+}
+
+.btn-div{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn-div a{
+    text-decoration: none;
+}

@@ -1,0 +1,155 @@
+@font-face {
+    font-family: macondo;
+    src: url(../FONTS/Macondo-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: macondo;
+}
+
+.title{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.task-section{
+    width: 100%;
+    height: 80vh;
+    overflow-y: scroll;
+}
+
+.task-section::-webkit-scrollbar{
+    display: none;
+}
+
+.task-section .task{
+    width: 100%;
+    height: 10vh;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    transition: 0.5s ease;
+}
+
+.task-section .task:hover{
+    background-color: rgba(128, 128, 128, 0.427);
+}
+
+.task-section .task input{
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+}
+
+.task-section .task .task-title{
+    margin-left: 10px;
+}
+
+.create_new{
+    width: 70px;
+    height: 70px;
+    background-color: orange;
+    color: white;
+    font-family: inherit;
+    font-size: 60px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid black;
+    position: absolute;
+    left: 1%;
+}
+
+.profile img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.profile-section{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+}
+
+.profile-section .image{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-top: 5%;
+}
+
+.profile-section .image img{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.profile-section h1{
+    margin-top: 5%;
+}
+
+.profile-section h2{
+    margin-top: 5%;
+}
+
+.profile-section button{
+    margin-top: 100%;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    font-family: inherit;
+}
+
+.return{
+    position: absolute;
+    left: 0;
+    top: 1%;
+    font-size: 20px;
+}
+
+@keyframes open{
+    0%{
+        left: -100%;
+    }
+    100%{
+        left: 0%;
+    }
+}
+@keyframes close{
+    0%{
+        left: 0%;
+    }
+    100%{
+        left: -100%;
+    }
+}
